@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="book_margin_bottom">20dp</dimen>
+    <dimen name="bookshelf_height">120dp</dimen>
+    <dimen name="cover_margin_left">40dp</dimen>
+    <dimen name="description_margin_right">32dp</dimen>
+    <dimen name="desription_width">192dp</dimen>
+    <dimen name="description_padding">8dp</dimen>
+    <dimen name="indicator_size">40dp</dimen>
+    <dimen name="logo_height">40dp</dimen>
+    <dimen name="logo_text_size">22dp</dimen>
+    <dimen name="indicator_margin_top">200dp</dimen>
+</resources>

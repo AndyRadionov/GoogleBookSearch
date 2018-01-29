@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BookSearch</string>
+    <string name="book_search">Book Search</string>
+    <string name="no_internet_msg">No Internet connection!</string>
+
+
+    <string name="title_format">%30s…</string>
+    <string name="author_format">%20s…</string>
+    <string name="book_cover">Book Cover</string>
+    <string name="empty_text">¯\\_(ツ)_/¯</string>
+</resources>

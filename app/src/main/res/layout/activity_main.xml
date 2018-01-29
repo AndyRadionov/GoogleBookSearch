@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    android:orientation="vertical"
+    tools:context="io.github.andyradionov.googlebookssearch.ui.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_height"
+        android:layout_gravity="center"
+        android:background="@drawable/top_background"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="@string/book_search"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/logo_text_size"
+        tools:ignore="SpUsage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_background"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <EditText
+            android:id="@+id/et_search_query"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_background"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingBottom="8dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onSearchClick"
+            android:src="@drawable/ic_action_search" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="@dimen/indicator_size"
+        android:layout_height="@dimen/indicator_size"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/indicator_margin_top"
+        android:visibility="invisible" />
+
+    <include layout="@layout/books_container" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/indicator_margin_top"
+        android:text="@string/empty_text"
+        android:textSize="@dimen/indicator_size"
+        android:visibility="invisible"
+        tools:ignore="SpUsage" />
+</LinearLayout>
