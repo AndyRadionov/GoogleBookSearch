@@ -42,7 +42,7 @@ public class BooksData {
                     }
 
                     @Override
-                    public void onFailure(@NonNull Call<BooksResponseDTO> call, @NonNull Throwable t) {
+                    public void onFailure(Call<BooksResponseDTO> call, @NonNull Throwable t) {
                         booksDataCallback.onErrorLoad();
                     }
                 });
